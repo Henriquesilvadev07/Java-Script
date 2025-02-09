@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual o seu páis?</h1>
+    <input type="text" id="país">
+    <input type="button" value="Resultado" onclick="resultado()">
+    <div id="res">Resultado de nacionalidade</div>
+    <script>
+        function resultado() {
+        let país = window.document.getElementById('país')
+        let res = window.document.getElementById('res')
+        if (país = 'brasil') {
+            res.innerHTML = 'voce é Brasileiro'
+        }else {
+            res.innerHTML = 'Voce é estrangeiro'
+        }
+
+
+    }
+    </script>
+</body>
+</html>
